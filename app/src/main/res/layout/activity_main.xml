@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,56 +7,40 @@
     tools:context=".MainActivity">
 
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="412dp"
-        android:layout_height="786dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.274"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.586"
-        app:srcCompat="@color/colorAccent" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Search For a City"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="129dp" />
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:src="@color/colorAccent"-->
+<!--         />-->
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="258dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="300dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="My Weather App"
         android:textAlignment="center"
+        android:textColor="@color/colorPrimaryText"
         android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.419"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.49" />
+        android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/buttonSearch"
-        android:layout_width="141dp"
-        android:layout_height="57dp"
-        android:background="#A05871"
-        android:text="Search"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="190dp" />
+<!--    <EditText-->
+<!--        android:id="@+id/editText"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/textView"-->
+<!--        android:hint="Search For a City"-->
+<!--        android:inputType="textPersonName" />-->
+<!--    -->
+<!--    <Button-->
+<!--        android:id="@+id/buttonSearch"-->
+<!--        android:layout_width="141dp"-->
+<!--        android:layout_height="57dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_below="@id/editText"-->
+<!--        android:background="#A05871"-->
+<!--        android:text="Search" />-->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
