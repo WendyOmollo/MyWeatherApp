@@ -9,6 +9,8 @@ import android.widget.Button;
 import com.wendyomollo.myweatherapp.WeatherResponse.WeatherResponse;
 
 import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -21,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     public static String BaseUrl = BASE_URL;
     public static String AppId = WEATHER_API_KEY;
     private Button mSearchCity;
-    public String main = "Kenya";
+    public String main = "clouds";
     public String description = "Few clouds, a little sun";
 
     @Override
@@ -44,7 +46,19 @@ public class MainActivity extends AppCompatActivity {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
-        WeatherResponse response = retrofit.create(WeatherResponse.class);
+        WeatherService service = retrofit.create(WeatherService.class);
+        Call<WeatherResponse> call = service.getCurrentWeatherData(main,description,APPID);
+        call.enqueue(new Callback<WeatherResponse>() {
+            @Override
+            public void onResponse(Call<WeatherResponse> call, Response<WeatherResponse> response) {
+
+            }
+
+            @Override
+            public void onFailure(Call<WeatherResponse> call, Throwable t) {
+
+            }
+        });
 
            }
 }

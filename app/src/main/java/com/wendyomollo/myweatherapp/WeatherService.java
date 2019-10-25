@@ -1,5 +1,17 @@
 package com.wendyomollo.myweatherapp;
 
-public interface WeatherService {
+import com.wendyomollo.myweatherapp.WeatherResponse.WeatherResponse;
 
+import retrofit2.Call;
+import retrofit2.http.GET;
+import retrofit2.http.Query;
+
+public interface WeatherService {
+    @GET("data/2.5/weather?")
+Call<WeatherResponse> getCurrentWeatherData(
+        @Query("main")String main,
+        @Query("description") String description,
+        @Query("APPID") String app_id
+);
 }
+//data/2.5/forecast?
