@@ -9,9 +9,9 @@ import retrofit2.http.Query;
 public interface WeatherService {
     @GET("data/2.5/weather?")
 Call<WeatherResponse> getCurrentWeatherData(
-        @Query("main")String main,
-        @Query("description") String description,
-        @Query("APPID") String app_id
+            @Query("lat") String lat,
+            @Query("lon") String lon,
+            @Query("APPID") String app_id
 );
 }
 //data/2.5/forecast?

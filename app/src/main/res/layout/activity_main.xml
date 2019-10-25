@@ -6,15 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-<!--    <ImageView-->
-<!--        android:id="@+id/imageView"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:scaleType="centerCrop"-->
-<!--        android:src="@color/colorAccent"-->
-<!--         />-->
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
@@ -26,23 +17,31 @@
         android:textSize="24sp"
         android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/textView"
-            android:hint="Search For a City"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:inputType="textPersonName" />
+<!--        <EditText-->
+<!--            android:id="@+id/editText"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/textView"-->
+<!--            android:hint="Search For a City"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:inputType="textPersonName" />-->
 
         <Button
             android:id="@+id/buttonSearch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/editText"
+            android:layout_below="@id/textView"
             android:background="#A05871"
             android:text="Search" />
+
+    <TextView
+        android:id="@+id/dataTextView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/buttonSearch"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_marginTop="12dp" />
 
 </RelativeLayout>

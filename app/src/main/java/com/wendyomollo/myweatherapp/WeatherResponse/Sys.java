@@ -8,7 +8,7 @@ public class Sys {
 
     @SerializedName("country")
     @Expose
-    private String country;
+    public String country;
     @SerializedName("sunrise")
     @Expose
     private Integer sunrise;

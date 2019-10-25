@@ -12,13 +12,13 @@ public class WeatherResponse {
     private Coord coord;
     @SerializedName("sys")
     @Expose
-    private Sys sys;
+    public Sys sys;
     @SerializedName("weather")
     @Expose
     private List<Weather> weather = null;
     @SerializedName("main")
     @Expose
-    private Main main;
+    public Main main;
     @SerializedName("wind")
     @Expose
     private Wind wind;
