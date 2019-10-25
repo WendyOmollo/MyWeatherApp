@@ -26,13 +26,15 @@
         android:textSize="24sp"
         android:textStyle="bold" />
 
-<!--    <EditText-->
-<!--        android:id="@+id/editText"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@id/textView"-->
-<!--        android:hint="Search For a City"-->
-<!--        android:inputType="textPersonName" />-->
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:hint="Search For a City"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:inputType="textPersonName" />
 <!--    -->
 <!--    <Button-->
 <!--        android:id="@+id/buttonSearch"-->
