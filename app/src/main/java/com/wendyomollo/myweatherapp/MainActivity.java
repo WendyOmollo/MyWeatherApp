@@ -24,8 +24,8 @@ import static com.wendyomollo.myweatherapp.Constants.WEATHER_API_KEY;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static String BaseUrl = BASE_URL;
-    public static String AppId = WEATHER_API_KEY;
+    public static String BaseUrl = "http://api.openweathermap.org/";
+    public static String AppId = "ce27d6b3019108ce97ed883ce0ef5693";
     private Button mSearchCity;
     private TextView mTextView;
     public static String lat = "35";
