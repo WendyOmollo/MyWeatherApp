@@ -41,6 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/buttonSearch"
+        android:textSize="24dp"
         android:textColor="@color/colorPrimaryText"
         android:layout_marginTop="12dp" />
 

@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
     public static String AppId = "ce27d6b3019108ce97ed883ce0ef5693";
     private Button mSearchCity;
     private TextView mTextView;
-    public static String lat = "35";
-    public static String lon = "139";
+    public static String lat = "23";
+    public static String lon = "179";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
